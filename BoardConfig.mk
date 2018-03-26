@@ -39,9 +39,8 @@ WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path
 
 BOARD_LEGACY_NL80211_STA_EVENTS  := true
 
-BOARD_HAVE_BLUETOOTH_BCM := true
-TARGET_NEEDS_BLUETOOTH_INIT_DELAY := true
-TARGET_CUSTOM_BLUEDROID := ../../../device/sony/tamsui-common-legacy/bluedroid/bluetooth.c
+# Bluetooth device specific
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/jlo/bluetooth
 
 # Custom vibrator
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/sony/tamsui-common-legacy/vibrator/vibrator.c
