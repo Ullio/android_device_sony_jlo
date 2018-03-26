@@ -19,8 +19,8 @@ $(call inherit-product-if-exists, vendor/sony/jlo/jlo-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/jlo/overlay
 
-# Inherit the tamsui-common definitions
-$(call inherit-product, device/sony/tamsui-common/tamsui.mk)
+# Inherit the tamsui-common-legacy definitions
+$(call inherit-product, device/sony/tamsui-common-legacy/tamsui.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
@@ -40,7 +40,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # Configuration scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/init.device.rc:root/init.device.rc \
-    device/sony/tamsui-common/prebuilt/logo_H.rle:root/logo.rle
+    device/sony/tamsui-common-legacy/prebuilt/logo_H.rle:root/logo.rle
 
 # USB function switching
 PRODUCT_COPY_FILES += \

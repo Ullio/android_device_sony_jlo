@@ -4,7 +4,7 @@ USE_CAMERA_STUB := true
 -include vendor/sony/jlo/BoardConfigVendor.mk
 
 #inherit from the common tamsui definitions
--include device/sony/tamsui-common/BoardConfigCommon.mk
+-include device/sony/tamsui-common-legacy/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/jlo/include
 
@@ -41,10 +41,10 @@ BOARD_LEGACY_NL80211_STA_EVENTS  := true
 
 BOARD_HAVE_BLUETOOTH_BCM := true
 TARGET_NEEDS_BLUETOOTH_INIT_DELAY := true
-TARGET_CUSTOM_BLUEDROID := ../../../device/sony/tamsui-common/bluedroid/bluetooth.c
+TARGET_CUSTOM_BLUEDROID := ../../../device/sony/tamsui-common-legacy/bluedroid/bluetooth.c
 
 # Custom vibrator
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/sony/tamsui-common/vibrator/vibrator.c
+BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/sony/tamsui-common-legacy/vibrator/vibrator.c
 
 BOARD_SDCARD_INTERNAL_DEVICE := /dev/block/mmcblk0p16
 
