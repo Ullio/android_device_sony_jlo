@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="CyanogenMod/android_packages_apps_Apollo" />
+  <project name="CyanogenMod/android_packages_apps_Apollo" path="packages/apps/Apollo" revision="cm-10.1" />
+  <project name="Ullio/android_device_sony_tamsui-common-legacy" path="device/sony/tamsui-common-legacy" remote="github" revision="jellybean" />
+  <project name="Ullio/android_device_sony_jlo" path="device/sony/jlo" remote="github" revision="jellybean" />
+  <project name="Ullio/android_kernel_sony_msm7x27a-legacy" path="kernel/sony/msm7x27a-legacy" remote="github" revision="jellybean" />
+  <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" remote="github" revision="jellybean" />
+  <project name="CyanogenMod/android_device_sony_tamsui-common" path="device/sony/tamsui-common" remote="github" revision="jellybean" />
+  <project name="CyanogenMod/android_kernel_sony_msm7x27a" path="kernel/sony/msm7x27a" remote="github" revision="jellybean" />
+</manifest>
