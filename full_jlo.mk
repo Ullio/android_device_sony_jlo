@@ -27,6 +27,7 @@ PRODUCT_PACKAGES := \
     Effem \
     FM2 \
     FmRadio \
+    FmRadioReceiver \
     LockClock \
     Torch
 
