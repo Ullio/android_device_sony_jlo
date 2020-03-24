@@ -22,8 +22,12 @@
 #
 #
  
-# Torch
+# Additional packages
 PRODUCT_PACKAGES := \
+    Effem \
+    FM2 \
+    FmRadio \
+    LockClock \
     Torch
 
 # Inherit from those products. Most specific first.
